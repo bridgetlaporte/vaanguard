@@ -1,13 +1,26 @@
-/* CSS BY YOUR NAME */
+/* CSS BY Bridget LaPorte */
+
+
+
+
 
 /* IMPORTED FONTS*/
-/* IMPORT "INTER" FROM GOOGLE FONTS"
+    /* IMPORT "INTER" FROM GOOGLE FONTS"*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+
+
+
 
 /* CSS RESET */
-/* http://meyerweb.com/eric/tools/css/reset/
-v2.0 | 20110126
-License: none (public domain)
-*/
+
+    /* http://meyerweb.com/eric/tools/css/reset/
+    v2.0 | 20110126
+    License: none (public domain)
+    */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -62,9 +75,53 @@ table {
     --font: "Inter", sans-serif;
 }
 
-/* GLOBAL STYLES (MOBILE FIRST (SMALL) */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GLOBAL STYLES (MOBILE FIRST (SMALL) */
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
+
+body {
+    font-family: var(--font);
+    background-color: var(--white);
+    color: var(--black);
+    min-width: 400px;
+    line-height: 1.6;
+}
+
+h1 {
+    color:var(--blue);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+
+
 
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 .container {
@@ -73,8 +130,39 @@ table {
     margin: 0 auto;
 }
 
+
+header {
+    background-color: var(--black);
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    color: var(--blue);
+    justify-content: space-between;
+    box-shadow: 0 5px 6px var(--blue);
+    position: sticky;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo img {
+    width: 75px;
+    height: auto;
+}  
+
+nav h2 {
+    display: none;
+    padding: 1rem;
+
+}
+
+
+
 /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
- {
+#hero {
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
     height: 80vh;
     display: grid;
